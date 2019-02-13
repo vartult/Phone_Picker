@@ -11,7 +11,7 @@ import android.telecom.TelecomManager.EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME
 import android.view.Window
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
-
+import kotlinx.android.synthetic.main.activity_main.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -37,6 +37,9 @@ class MainActivity : AppCompatActivity() {
                 .putExtra(EXTRA_CHANGE_DEFAULT_DIALER_PACKAGE_NAME, packageName)
                 .let(::startActivity)
         }
+        hello1.text="Thank You!!"
+
+        //hello1.text="Thank You!!"
     }
 
 }
